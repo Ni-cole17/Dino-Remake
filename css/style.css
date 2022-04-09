@@ -1,0 +1,42 @@
+body{
+    background: #fafafa;
+}
+.person{
+    width: 60px;
+    height: 60px;
+    background-image: url(person.png);
+    position: absolute; 
+    bottom: 0;
+}
+.peoples{
+    width: 60px;
+    height: 60px;
+    position: absolute; 
+    bottom: 0;
+    background-image: url(peoples.png);
+}
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+
+}
+@keyframes slideright{
+    from{
+        background-position: 70000%
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(back.png);
+    background-repeat: repeat-x;
+    animation: slideright 1200s infinite linear;
+    width: 100%;
+    height: 375px;
+}
